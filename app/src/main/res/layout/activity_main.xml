@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alignmentMode="alignMargins"
+    android:columnCount="2"
+    android:rowCount="3"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:id="@+id/layout_health"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_heal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Tips"
+            android:textColor="#00BCD4"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_exercise"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_fitness" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercise"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_food"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_food" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Tips"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_medication"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_pills" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medication"
+            android:textColor="#E91E63"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</GridLayout>
