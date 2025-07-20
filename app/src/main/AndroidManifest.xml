@@ -22,6 +22,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" android:exported="true" />
+        <activity android:name=".MainActivity" android:exported="true" />
+        <activity android:name=".HealthActivity" android:exported="true" />
+        <activity android:name=".ExerciseActivity" android:exported="true" />
     </application>
 
 </manifest>
