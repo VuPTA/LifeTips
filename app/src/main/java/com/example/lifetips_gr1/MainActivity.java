@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         layoutFood.setOnClickListener(v -> {
-            // TODO: Chuyển sang màn hình Food Tips
+            startActivity(new Intent(MainActivity.this, FoodActivity.class));
         });
 
         layoutMedication.setOnClickListener(v -> {
-            // TODO: Chuyển sang màn hình Medication
+            startActivity(new Intent(MainActivity.this, MedicationActivity.class));
         });
     }
 }
