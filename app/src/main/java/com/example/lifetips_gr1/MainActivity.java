@@ -1,6 +1,7 @@
 package com.example.lifetips_gr1;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
@@ -24,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout layoutMedication = findViewById(R.id.layout_medication);
 
         layoutHealth.setOnClickListener(v -> {
-            // TODO: Chuyển sang màn hình Health Tips
+            startActivity(new Intent(MainActivity.this, HealthActivity.class));
         });
 
         layoutExercise.setOnClickListener(v -> {
-            // TODO: Chuyển sang màn hình Exercise Tips
+            startActivity(new Intent(MainActivity.this, ExerciseActivity.class));
         });
 
         layoutFood.setOnClickListener(v -> {
