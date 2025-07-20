@@ -10,7 +10,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String DBNAME = "users.db";
 
     public DBHelper(Context context) {
-        super(context, DBNAME, null, 2);
+        super(context, DBNAME, null, 5);
     }
 
     @Override
@@ -18,7 +18,9 @@ public class DBHelper extends SQLiteOpenHelper {
         MyDB.execSQL("CREATE TABLE users(username TEXT primary key, password TEXT)");
 
         MyDB.execSQL("CREATE TABLE health(id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, description TEXT, imageUrl TEXT)");
+        MyDB.execSQL("CREATE TABLE food(id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, description TEXT, imageUrl TEXT)");
         MyDB.execSQL("CREATE TABLE exercise(id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, description TEXT, imageUrl TEXT)");
+        MyDB.execSQL("CREATE TABLE medication(id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, description TEXT, imageUrl TEXT)");
 
         MyDB.execSQL("INSERT INTO health (title, description, imageUrl) VALUES " +
                 "('Uống đủ nước', 'Nên uống 2 lít nước mỗi ngày', 'https://cdn.pixabay.com/photo/2016/02/18/06/57/glass-1206584_1280.jpg')," +
@@ -30,6 +32,12 @@ public class DBHelper extends SQLiteOpenHelper {
                 "('Rửa tay thường xuyên', 'Ngăn ngừa vi khuẩn lây lan', 'https://cdn.pixabay.com/photo/2020/03/27/17/23/wash-hands-4974549_1280.jpg')," +
                 "('Giữ vệ sinh cá nhân', 'Tránh lây nhiễm vi khuẩn', 'https://cdn.pixabay.com/photo/2017/03/30/12/44/woman-2181420_1280.jpg')");
 
+        MyDB.execSQL("INSERT INTO food (title, description, imageUrl) VALUES " +
+                "('Ăn rau xanh', 'Chứa nhiều vitamin và chất xơ', 'https://cdn.pixabay.com/photo/2016/11/29/09/08/vegetables-1866584_1280.jpg')," +
+                "('Tránh thức ăn nhanh', 'Gây béo phì và bệnh tim', 'https://cdn.pixabay.com/photo/2015/05/15/14/47/hamburger-768159_1280.jpg')," +
+                "('Ăn trái cây mỗi ngày', 'Tăng sức đề kháng', 'https://cdn.pixabay.com/photo/2016/01/05/13/58/apple-1122537_1280.jpg')," +
+                "('Ăn ngũ cốc nguyên cám', 'Giảm nguy cơ tim mạch', 'https://cdn.pixabay.com/photo/2017/06/06/22/59/cereal-2378724_1280.jpg')");
+
         MyDB.execSQL("INSERT INTO exercise (title, description, imageUrl) VALUES " +
                 "('Đi bộ mỗi ngày', 'Giúp tuần hoàn tốt', 'https://cdn.pixabay.com/photo/2017/04/12/19/25/walk-2228865_1280.jpg')," +
                 "('Tập yoga', 'Giúp thư giãn', 'https://cdn.pixabay.com/photo/2017/01/20/00/30/people-1991235_1280.jpg')," +
@@ -37,13 +45,21 @@ public class DBHelper extends SQLiteOpenHelper {
                 "('Bơi lội', 'Tăng sức bền', 'https://cdn.pixabay.com/photo/2015/07/02/10/18/swimmer-828732_1280.jpg')," +
                 "('Tham gia thể thao', 'Bóng đá, bóng rổ, cầu lông v.v.', 'https://cdn.pixabay.com/photo/2016/03/27/07/08/soccer-1284661_1280.jpg')");
 
+        MyDB.execSQL("INSERT INTO medication (title, description, imageUrl) VALUES " +
+                "('Paracetamol', 'Giảm đau, hạ sốt', 'https://cdn.pixabay.com/photo/2021/06/08/09/38/tablets-6318985_1280.jpg')," +
+                "('Vitamin C', 'Tăng đề kháng', 'https://cdn.pixabay.com/photo/2016/10/07/14/11/tangerines-1721633_1280.jpg')," +
+                "('Magie', 'Giảm căng thẳng', 'https://cdn.pixabay.com/photo/2021/06/08/09/38/magnesium-6318987_1280.jpg')");
+
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase MyDB, int oldVersion, int newVersion) {
         MyDB.execSQL("DROP TABLE IF EXISTS users");
         MyDB.execSQL("DROP TABLE IF EXISTS health");
+        MyDB.execSQL("DROP TABLE IF EXISTS food");
         MyDB.execSQL("DROP TABLE IF EXISTS exercise");
+        MyDB.execSQL("DROP TABLE IF EXISTS medication");
         onCreate(MyDB);
     }
 
