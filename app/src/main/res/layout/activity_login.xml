@@ -12,9 +12,10 @@
         android:id="@+id/ivIcon"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_marginTop="32dp"
         android:src="@drawable/ic_fitness"
-        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
