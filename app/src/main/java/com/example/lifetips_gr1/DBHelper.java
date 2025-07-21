@@ -10,7 +10,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String DBNAME = "users.db";
 
     public DBHelper(Context context) {
-        super(context, DBNAME, null, 11);
+        super(context, DBNAME, null, 12);
     }
 
     @Override
@@ -35,10 +35,15 @@ public class DBHelper extends SQLiteOpenHelper {
                 "('Tắm rửa thường xuyên', 'Tránh cơ thể bị nhiễm vi khuẩn', 'https://media.istockphoto.com/id/1169793341/vi/vec-to/ch%C3%A0ng-trai-tr%E1%BA%BB-%C4%91i-t%E1%BA%AFm-th%C3%A0nh-ph%E1%BA%A7n-h%C3%ACnh-tr%C3%B2n-ch%C3%A0ng-trai-h%E1%BA%A1nh-ph%C3%BAc-g%E1%BB%99i-%C4%91%E1%BA%A7u-l%C3%B4ng-x%C3%A0-ph%C3%B2ng-c%C6%A1-th%E1%BB%83.jpg?s=612x612&w=0&k=20&c=wgwx7vsbrng8C2gOnc-Cr8H-OsZaYVT69Ujw3S8t2OE=')");
 
         MyDB.execSQL("INSERT INTO food (title, description, imageUrl) VALUES " +
-                "('Ăn rau xanh', 'Chứa nhiều vitamin và chất xơ', 'https://cdn.pixabay.com/photo/2016/11/29/09/08/vegetables-1866584_1280.jpg')," +
-                "('Tránh thức ăn nhanh', 'Gây béo phì và bệnh tim', 'https://cdn.pixabay.com/photo/2015/05/15/14/47/hamburger-768159_1280.jpg')," +
-                "('Ăn trái cây mỗi ngày', 'Tăng sức đề kháng', 'https://cdn.pixabay.com/photo/2016/01/05/13/58/apple-1122537_1280.jpg')," +
-                "('Ăn ngũ cốc nguyên cám', 'Giảm nguy cơ tim mạch', 'https://cdn.pixabay.com/photo/2017/06/06/22/59/cereal-2378724_1280.jpg')");
+                "('Ăn rau củ', 'Chứa nhiều vitamin và chất xơ', 'https://media.istockphoto.com/id/2150857924/vi/anh/ng%C6%B0%E1%BB%9Di-ph%E1%BB%A5-n%E1%BB%AF-%C4%83n-salad-m%C3%A0u-c%E1%BA%A7u-v%E1%BB%93ng-t%C6%B0%C6%A1i-n%E1%BB%81n-tr%C3%A1i-c%C3%A2y-v%C3%A0-rau-qu%E1%BA%A3-nhi%E1%BB%81u-m%C3%A0u-kh%C3%A1i-ni%E1%BB%87m-%C4%83n-u%E1%BB%91ng.jpg?s=612x612&w=0&k=20&c=SNYcbR7Z5FSRt-vl74nwSeXrnnYX7ZepcqCbhmbyn0I=')," +
+                "('Tránh thức ăn nhanh', 'Gây béo phì và ảnh hưởng mỡ máu', 'https://media.istockphoto.com/id/1305925945/vi/anh/m%E1%BB%99t-ng%C6%B0%E1%BB%9Di-ph%E1%BB%A5-n%E1%BB%AF-l%C3%A0m-d%E1%BA%A5u-hi%E1%BB%87u-tay-%C4%91%E1%BB%83-t%E1%BB%AB-ch%E1%BB%91i-m%E1%BB%99t-chi%E1%BA%BFc-hamburger-khoai-t%C3%A2y-chi%C3%AAn-v%C3%A0-g%C3%A0-r%C3%A1n-tr%C3%AAn.jpg?s=612x612&w=0&k=20&c=ZRoWobS0ryOEkCNlda5GsdXs6MwUpkPgs-gYEMjtMh0=')," +
+                "('Uống trà xanh', 'Giảm stress và giảm mỡ trong máu', 'https://media.istockphoto.com/id/471942753/vi/anh/ng%C6%B0%E1%BB%9Di-ph%E1%BB%A5-n%E1%BB%AF-nh%E1%BA%A5m-nh%C3%A1p-tr%C3%A0-xanh-t%E1%BB%AB-m%E1%BB%99t-t%C3%A1ch-l%E1%BB%9Bn-trong-v%E1%BA%AFt.jpg?s=612x612&w=0&k=20&c=266xIQf87EnCpwtELSyFzlxKVBtTeqOWaLt792b7aJk=')," +
+                "('Ăn sữa chua', 'Tốt cho đường tiêu hóa', 'https://media.istockphoto.com/id/1435026978/vi/anh/b%C3%A1t-s%E1%BB%AFa-chua-hy-l%E1%BA%A1p-xanh-v%C3%A0-qu%E1%BA%A3-m%E1%BB%8Dng-t%C6%B0%C6%A1i-b%E1%BB%8B-c%C3%B4-l%E1%BA%ADp-tr%C3%AAn-n%E1%BB%81n-tr%E1%BA%AFng.jpg?s=612x612&w=0&k=20&c=Fk_AF6CRAizsphXAbe8KcaR-99zr2jgnBIVZGEkrJss=')," +
+                "('Uống detox', 'Giảm mỡ thừa đào thải độc tố', 'https://media.istockphoto.com/id/641975492/vi/anh/ba-lo%E1%BA%A1i-tr%C3%A1i-c%C3%A2y-v%C3%A0-rau-qu%E1%BA%A3-gi%E1%BA%A3i-%C4%91%E1%BB%99c-%C4%91%E1%BB%93-u%E1%BB%91ng.jpg?s=612x612&w=0&k=20&c=H9ZwMeuEwEHZf-GYvHlmu46JFvXEdra296oQRD4z_QQ=')," +
+                "('Ăn đường ăn kiêng', 'Giảm bớt lượng calo nạp vào cơ thể', 'https://media.istockphoto.com/id/658974698/vi/anh/v%C4%83n-b%E1%BA%A3n-kh%C3%B4ng-c%C3%B3-%C4%91%C6%B0%E1%BB%9Dng-%C4%91%C6%B0%E1%BB%A3c-vi%E1%BA%BFt-b%E1%BA%B1ng-%C4%91%C6%B0%E1%BB%9Dng.jpg?s=612x612&w=0&k=20&c=tgNq8xodiB6mt17bTMiQP_QnuQZj9r85SGDTikt_V0I=')," +
+                "('Bột Yến mạch', 'Giàu chất dinh dưỡng', 'https://media.istockphoto.com/id/874247746/vi/anh/y%E1%BA%BFn-m%E1%BA%A1ch-c%C3%A1n-ho%E1%BA%B7c-b%E1%BB%99t-y%E1%BA%BFn-m%E1%BA%A1ch-trong-b%C3%A1t-g%E1%BB%97-tr%C3%AAn-n%E1%BB%81n-%C4%91%C3%A1.jpg?s=612x612&w=0&k=20&c=6PjlBXGvfy4XuZLWXJmnyySDmKHYh3QfbIieAJsF_no=')," +
+                "('Uống nước ép trái cây', 'Tăng sức đề kháng và cung cấp vitamin', 'https://media.istockphoto.com/id/155376375/vi/anh/n%C6%B0%E1%BB%9Bc-%C3%A9p-tr%C3%A1i-c%C3%A2y.jpg?s=612x612&w=0&k=20&c=PAFj6muZYVCWOA-yc5BKfE72zdZ2Un1KF_4P9BJ_1t0=')," +
+                "('Ngũ cốc', 'Giảm nguy cơ tim mạch', 'https://media.istockphoto.com/id/835833518/vi/anh/th%E1%BB%A9c-%C4%83n-nguy%C3%AAn-h%E1%BA%A1t-v%E1%BA%ABn-c%C3%B2n-s%E1%BB%91ng-%C4%91%C6%B0%E1%BB%A3c-ch%E1%BB%A5p-tr%C3%AAn-b%C3%A0n-g%E1%BB%97-m%E1%BB%99c-m%E1%BA%A1c.jpg?s=612x612&w=0&k=20&c=fkZHiY0V2OkHT8P5zcLRBKgWbwF6Ot-wIn0WMc-jPmQ=')");
 
         MyDB.execSQL("INSERT INTO exercise (title, description, imageUrl) VALUES " +
                 "('Đi bộ', 'Giúp tuần hoàn tốt', 'https://media.istockphoto.com/id/1445417525/vi/anh/ngh%E1%BB%89-h%C6%B0u-t%E1%BA%ADp-th%E1%BB%83-d%E1%BB%A5c-v%C3%A0-%C4%91i-d%E1%BA%A1o-v%E1%BB%9Bi-ch%C3%B3-v%C3%A0-c%E1%BA%B7p-v%E1%BB%A3-ch%E1%BB%93ng-trong-c%C3%B4ng-vi%C3%AAn-khu-ph%E1%BB%91-%C4%91%E1%BB%83-th%C6%B0-gi%C3%A3n-t%E1%BA%ADp.jpg?s=612x612&w=0&k=20&c=kP8U3evrAk2lnVR6AoP8_m2dFggwaDTzLouBrFXHFXs=')," +
@@ -53,9 +58,16 @@ public class DBHelper extends SQLiteOpenHelper {
                 "('Đánh pickleball', 'Thư giãn gân cốt', 'https://media.istockphoto.com/id/1355170007/vi/anh/thanh-ni%C3%AAn-ch%C6%A1i-pickleball.jpg?s=612x612&w=0&k=20&c=o2H1lwVVD_HaBTSCwHkmuAtKB9R61VIsOomuVBWyqm0=')");
 
         MyDB.execSQL("INSERT INTO medication (title, description, imageUrl) VALUES " +
-                "('Paracetamol', 'Giảm đau, hạ sốt', 'https://cdn.pixabay.com/photo/2021/06/08/09/38/tablets-6318985_1280.jpg')," +
-                "('Vitamin C', 'Tăng đề kháng', 'https://cdn.pixabay.com/photo/2016/10/07/14/11/tangerines-1721633_1280.jpg')," +
-                "('Magie', 'Giảm căng thẳng', 'https://cdn.pixabay.com/photo/2021/06/08/09/38/magnesium-6318987_1280.jpg')");
+                "('Paracetamol', 'Giảm đau, hạ sốt', 'https://media.istockphoto.com/id/932555698/vi/anh/hydrocodone-l%C3%A0-thu%E1%BB%91c-gi%E1%BA%A3m-%C4%91au-%C4%91%C6%B0%E1%BB%A3c-k%C3%AA-%C4%91%C6%A1n-l%C3%A0-thu%E1%BB%91c-gi%E1%BA%A3m-%C4%91au-m%E1%BA%A1nh.jpg?s=612x612&w=0&k=20&c=GZyTmLAogRm0yUBhXDFFSjytIefvXRnu4Kgz4ndGQ5w=')," +
+                "('Vitamin C', 'Tăng đề kháng', 'https://media.istockphoto.com/id/1392131094/vi/vec-to/kh%C3%A1i-ni%E1%BB%87m-vector-d%E1%BA%A5u-hi%E1%BB%87u-dinh-d%C6%B0%E1%BB%A1ng-s%E1%BB%A9c-m%E1%BA%A1nh-c%E1%BB%A7a-vitamin-c-c%C3%B4ng-th%E1%BB%A9c-h%C3%B3a-h%E1%BB%8Dc.jpg?s=612x612&w=0&k=20&c=QwJ8J3Y7lSFb1NocXDO-thu6auL_2E6c_cwqiDtkbf4=')," +
+                "('Vitamin D', 'Cải thiện chiều cao', 'https://media.istockphoto.com/id/1366807729/vi/anh/t%E1%BB%AB-vitamin-d-v%E1%BB%9Bi-m%E1%BB%99t-c%E1%BB%91c-nh%E1%BB%8F-vi%C3%AAn-nang-vitamin-d3-tr%C3%AAn-%C4%91%C3%B3.jpg?s=612x612&w=0&k=20&c=8EOnKELhg8H8L06hRMrMSPNZQgv41ndVfNzkXT49e3g=')," +
+                "('Vitamin E', 'Tăng đề kháng chống Oxy hóa', 'https://media.istockphoto.com/id/626784936/vi/anh/thu%E1%BB%91c-xanh-ho%E1%BA%B7c-vi%C3%AAn-nang-ch%E1%BB%A9a-%C4%91%E1%BA%A7y-vitamin-e.jpg?s=612x612&w=0&k=20&c=d5bdqIQaz0Z3T-Ge7wK-dIKh246sA9ZnwV3o8_YTYyI=')," +
+                "('Vitamin A', 'Giúp cải thiện sáng mắt', 'https://media.istockphoto.com/id/803299426/vi/anh/c%C3%B4ng-th%E1%BB%A9c-h%C3%B3a-h%E1%BB%8Dc-c%E1%BB%A7a-vitamin-a-v%E1%BB%9Bi-b%C3%BAt-%C4%91en.jpg?s=612x612&w=0&k=20&c=eHqoJwSOLCLReHfdFYDQeyazIZg7xb6VdAqmDm038XE=')," +
+                "('Vitamin B1', 'Cải thiện cho người thiếu máu', 'https://media.istockphoto.com/id/542578154/vi/anh/vi%C3%AAn-nang-vitamin-b1-thu%E1%BB%91c-v%E1%BB%9Bi-thiamine-b%E1%BB%95-sung-ch%E1%BA%BF-%C4%91%E1%BB%99-%C4%83n-u%E1%BB%91ng.jpg?s=612x612&w=0&k=20&c=R4FbNSaQe4a40Am4SjkxLe4D3JkeFxSEvX0_19_hmeM=')," +
+                "('Sâm', 'Tăng cường sức khỏe phục hồi thể lực', 'https://media.istockphoto.com/id/1027128646/vi/anh/y-h%E1%BB%8Dc-trung-qu%E1%BB%91c.jpg?s=612x612&w=0&k=20&c=GZCuuRMIx0bhrq3uKoDjdMcSUsI1NVbl6UcLixCRcXQ=')," +
+                "('Roket', 'Tăng đcường sinh lý', 'https://media.istockphoto.com/id/1438325892/vi/vec-to/11-11-ng%C3%A0y-mua-s%E1%BA%AFm.jpg?s=612x612&w=0&k=20&c=fzy3VjhPSUEuK_RGjInT8xpl6vSeGWqvEPOoD2TPO5I=')," +
+                "('Collagen Powder', 'Tăng cường khả năng phục hồi', 'https://media.istockphoto.com/id/1129779844/vi/anh/b%E1%BB%99t-collagen-v%C3%A0-thu%E1%BB%91c-tr%C3%AAn-n%E1%BB%81n-h%E1%BB%93ng.jpg?s=612x612&w=0&k=20&c=c3Micm62us8QjbGwz6erIGf2e_bKsS73JDFNOpg6tug=')," +
+                "('Magie', 'Giảm căng thẳng', 'https://media.istockphoto.com/id/2190244751/vi/anh/magnesium-mineral-supplement.jpg?s=612x612&w=0&k=20&c=bfvkTYFW2a8v-RNK21Xr66WO79qk0V6NAof6gRNEpBM=')");
 
 
     }
