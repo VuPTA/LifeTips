@@ -25,6 +25,8 @@
         <activity android:name=".MainActivity" android:exported="true" />
         <activity android:name=".HealthActivity" android:exported="true" />
         <activity android:name=".ExerciseActivity" android:exported="true" />
+        <activity android:name=".MedicationActivity" android:exported="true" />
+        <activity android:name=".FoodActivity" android:exported="true" />
     </application>
 
 </manifest>
